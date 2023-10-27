@@ -27,10 +27,22 @@ pipeline{
                 
             }
         }
-        // stage('docker pushing'){
-        //     steps{
-
-        //     }
-        // }
+        stage('docker pushing'){
+            steps{
+                script{
+                    docker.withRegistry('','123'){
+                        docker_image.push()
+                    }
+                }
+            }
+        }
+        stage('clean docker images'){
+            steps{
+                script{
+                    sh 'docker container prune -f'
+                    sh 'docker image prune -f'
+                }
+            }
+        }
     }
 }
