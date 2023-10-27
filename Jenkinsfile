@@ -21,7 +21,10 @@ pipeline{
         }
         stage('docker build'){
             steps{
-                docker_image=docker.build "chaithanya970/spe-mini:latest"
+                script{
+                    docker_image=docker.build "chaithanya970/spe-mini:latest"
+                }
+                
             }
         }
         // stage('docker pushing'){
