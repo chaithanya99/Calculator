@@ -13,8 +13,10 @@ pipeline{
         }
         stage('maven build'){
             steps{
-
-                sh 'mvn clean compile install'
+                dir('./calculator'){
+                    sh 'mvn clean compile install'
+                }
+                
             }
         }
         // stage('docker build'){
