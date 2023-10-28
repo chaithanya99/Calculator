@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.AppTest" time="0.139" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.AppTest" time="0.119" tests="11" errors="0" skipped="0" failures="0">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.specification.version" value="11"/>
@@ -14,7 +14,7 @@
     <property name="os.name" value="Linux"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/mnt/c/sem7/spe/calculator/target/surefire/surefirebooter12241582229388456409.jar /mnt/c/sem7/spe/calculator/target/surefire 2023-10-28T12-47-47_642-jvmRun1 surefire14374742596104984147tmp surefire_015270385157648206899tmp"/>
+    <property name="sun.java.command" value="/mnt/c/sem7/spe/calculator/target/surefire/surefirebooter2805656203750068855.jar /mnt/c/sem7/spe/calculator/target/surefire 2023-10-28T14-21-42_836-jvmRun1 surefire10503323948466242942tmp surefire_09377874526300497014tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/mnt/c/sem7/spe/calculator/target/test-classes:/mnt/c/sem7/spe/calculator/target/classes:/home/chaithanya/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/chaithanya/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/mnt/c/sem7/spe/calculator/target/surefire/surefirebooter12241582229388456409.jar"/>
+    <property name="surefire.real.class.path" value="/mnt/c/sem7/spe/calculator/target/surefire/surefirebooter2805656203750068855.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.20+8-post-Ubuntu-1ubuntu120.04"/>
     <property name="user.name" value="chaithanya"/>
@@ -57,9 +57,14 @@
     <property name="java.class.version" value="55.0"/>
   </properties>
   <testcase name="mul_positive_negative" classname="com.example.AppTest" time="0.004"/>
+  <testcase name="sub_negative_numbers" classname="com.example.AppTest" time="0"/>
+  <testcase name="divide" classname="com.example.AppTest" time="0"/>
+  <testcase name="sub_positive_negative" classname="com.example.AppTest" time="0"/>
   <testcase name="mul_negative_numbers" classname="com.example.AppTest" time="0"/>
+  <testcase name="sub_positive_numbers" classname="com.example.AppTest" time="0"/>
   <testcase name="add_positive_negative" classname="com.example.AppTest" time="0.001"/>
   <testcase name="mul_positive_numbers" classname="com.example.AppTest" time="0"/>
   <testcase name="add_negative_numbers" classname="com.example.AppTest" time="0"/>
+  <testcase name="divide1" classname="com.example.AppTest" time="0"/>
   <testcase name="add_positive_numbers" classname="com.example.AppTest" time="0"/>
 </testsuite>

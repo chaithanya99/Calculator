@@ -43,6 +43,37 @@ public class AppTest
         assertEquals(result, cal.add(a, b));
     }
 
+
+
+    @Test
+    public void sub_positive_numbers(){
+        int a=2;
+        int b=5;
+        int result=-3;
+        assertEquals(result, cal.sub(a, b));
+    }
+
+    @Test
+    public void sub_positive_negative(){
+        int a=4;
+        int b=-34;
+        int result=38;
+        assertEquals(result, cal.sub(a, b));
+    }
+
+    @Test
+    public void sub_negative_numbers(){
+        int a=-2;
+        int b=-5;
+        int result=3;
+        assertEquals(result, cal.sub(a, b));
+    }
+
+
+
+
+
+
     @Test
     public void mul_positive_numbers(){
         int a=3;
@@ -67,5 +98,21 @@ public class AppTest
         assertEquals(result, cal.mul(a, b));
     }
 
+
+    @Test
+    public void divide(){
+        int a=10;
+        int b=5;
+        int result=2;
+        assertEquals(result, cal.div(a,b));
+    }
+
+    @Test
+    public void divide1(){
+        int a=121;
+        int b=11;
+        int result=11;
+        assertEquals(result, cal.div(a,b));
+    }
    
 }
