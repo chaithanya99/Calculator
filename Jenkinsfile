@@ -44,5 +44,17 @@ pipeline{
                 }
             }
         }
+        stage('pulling and running image(ansible)'){
+            steps{
+                ansiblePlaybook becomeUser: null,
+                colorized: true,
+                credentialsId: 'localhost',
+                disableHostKeyChecking: true,
+                installation: 'Ansible',
+                inventory: 'calculator/Deployment/inventory',
+                playbook: 'calculator/Deployment/deploy.yaml',
+                sudoUser: null
+            }
+        }
     }
 }
