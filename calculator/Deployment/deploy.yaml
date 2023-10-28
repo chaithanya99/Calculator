@@ -1,0 +1,14 @@
+---
+- name: pulling docker image from the docker hub
+  hosts: all
+  tasks:
+    - name: Pull image from docker hub
+      docker_image:
+        name: chaithanya970/spe-mini:latest
+        source: pull
+    - name: start docker service
+      service:
+        name: docker
+        state: started
+    - name: running the container
+      shell: docker run -it -d --name calculator chaithanya970/spe-mini:latest
