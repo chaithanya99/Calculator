@@ -1,6 +1,6 @@
 ---
 - name: pulling docker image from the docker hub
-  hosts: all
+  hosts: localhost
   vars:
     ansible_python_interpreter: /usr/bin/python3
   tasks:
