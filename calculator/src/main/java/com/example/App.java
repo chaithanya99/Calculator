@@ -9,6 +9,7 @@ import java.util.Scanner;
 //jkdjkfl
 public class App 
 {
+    //adindf
     public static int add(int num1,int num2){
         return num1+num2;
     }
